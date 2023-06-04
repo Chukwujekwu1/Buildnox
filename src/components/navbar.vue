@@ -7,10 +7,10 @@
             <li>
                 <a href="/">Home </a>
                 <a href="/about">About</a>
-                <a href="">Project</a>
-                <a href="">Services</a>
-                <a href="">Pages</a>
-                <a href="">Contact</a>
+                <a href="/project">Project</a>
+                <a href="/service">Services</a>
+                <a href="/page">Pages</a>
+                <a href="/contact">Contact</a>
             </li>
         </ul>
 
@@ -44,6 +44,9 @@ a{
     font-weight:2.5rem;
     color: white;
     font-family: Roboto;
+    &:hover{
+        color:orangered;
+    }
     
 }   
   
