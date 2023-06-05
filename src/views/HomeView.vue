@@ -45,23 +45,23 @@ normal distribution
 header{
     background-image: url('../assets/banner-1.jpg');
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
     font-family: Roboto, sans-serif;
     color:white;
 
     
 .house{
   
-  margin-left:51.5rem;
-  margin-top: 10.2rem;
+  margin-left:54.5rem;
+  margin-top: 16.8rem;
 }
 .man{
   margin-left: 40rem;
-  margin-top: -59rem;
-  height: 40rem;
+  margin-top: -52rem;
+  height: 45rem;
 }
 .text{
-  margin-top: -35rem;
+  margin-top: -40rem;
   margin-left: 10rem;
   h2{
     font-size: 4rem;
