@@ -1,7 +1,7 @@
 <template>
     <div>
 
-        <img src="./icons/logo-light (1).png" alt="">
+        <img :src="logo" alt="">
 
         <ul>
             <li>
@@ -18,7 +18,15 @@
 </template>
 
 <script>
+import logo from './icons/logo-light (1).png';
 
+export default{
+    data(){
+        return{
+            logo,
+        }
+    }
+}
 </script>
 
 <style lang="scss" scoped>

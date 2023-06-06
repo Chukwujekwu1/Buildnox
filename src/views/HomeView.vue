@@ -2,17 +2,22 @@
 
 import navbar from '../components/navbar.vue';
 import homeSection2 from '../components/homeSection2.vue';
-
+import homeSection3 from '../components/homesection3.vue';
+import house from '../assets/image-2.png';
+import man from '../assets/image-1.png';
 
 export default{
   components:{
     navbar,
     homeSection2,
+    homeSection3,
   },
   data(){
     return{
      man : '' ,
      house: '' ,
+     house,
+     man,
     }
     
   }
@@ -23,8 +28,8 @@ export default{
   <main>
     <header>
     <navbar/>
-    <img src='../assets/image-2.png' alt="" class="house">
-    <img src='../assets/image-1.png' alt="" class="man">
+    <img :src="house" class="house">
+    <img :src="man" class="man">
     <div class="text">
       <h2>VISION IN </h2>
     <h1>BUIL<span>DING</span> </h1>
@@ -39,6 +44,7 @@ normal distribution
     
   </header>
   <homeSection2/>
+  <homeSection3/>
   </main>
 </template>
 <style lang="scss" scoped>
