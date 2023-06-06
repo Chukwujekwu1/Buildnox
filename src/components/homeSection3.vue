@@ -9,8 +9,8 @@
       <ul >  
      <li v-for="image in images" :key="image.id" >
         <img :src="image.src" alt="" style="width:6rem" >
-        <h1 class="text">{{ image.text }}</h1>
-        <h1 class="text1" >{{ image.text1 }}</h1>
+        <h1 class="text text-3xl font-bold">{{ image.text }}</h1>
+        <h1 class="text1 text-3xl font-bold" >{{ image.text1 }}</h1>
         <img :src="image.workPics" alt="" class="workpics">
      </li>
     </ul>
@@ -104,6 +104,8 @@ div{
         display: flex;
         justify-content: space-between;
         margin-top: 3.5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
 
        
       li{
@@ -116,7 +118,7 @@ div{
         }
         padding: 43px 35px 0;
         height:20rem;
-        width:18rem;
+        width:20rem;
         background: #fff;
         list-style: none;
         color:#13203b;
@@ -127,6 +129,11 @@ div{
         .workpics{
             width: 18rem;
              margin-top: 2rem;
+             background-color: transparent;
+             &:hover{
+                background-color: red;
+                transition: 0.9s;
+             }
         }
       }
     }

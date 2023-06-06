@@ -2,7 +2,7 @@
 
 import navbar from '../components/navbar.vue';
 import homeSection2 from '../components/homeSection2.vue';
-import homeSection3 from '../components/homesection3.vue';
+import homeSection3 from '../components/homeSection3.vue';
 import house from '../assets/image-2.png';
 import man from '../assets/image-1.png';
 
@@ -63,7 +63,7 @@ header{
 }
 .man{
   margin-left: 40rem;
-  margin-top: -52rem;
+  margin-top: -44rem;
   height: 45rem;
 }
 .text{
