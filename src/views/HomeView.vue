@@ -30,8 +30,13 @@ export default{
   <main>
     <header>
     <navbar/>
-    <img :src="house" class="house">
-    <img :src="man" class="man">
+    
+     
+     <img :src="house" class="house">
+     <img :src="man" class="man"> 
+    
+  
+    
     <div class="text">
       <h2>VISION IN </h2>
     <h1>BUIL<span>DING</span> </h1>
@@ -63,18 +68,22 @@ header{
 
     
 .house{
+margin-left: 54.5rem; 
+margin-top: 16.8rem; 
+
+
   
-  margin-left:54.5rem;
-  margin-top: 16.8rem;
 }
 .man{
-  margin-left: 40rem;
-  margin-top: -44rem;
-  height: 45rem;
+  height: 44rem;
+  margin-top: -43rem;
+  margin-left: 38.5rem;
+  position: absolute;
 }
 .text{
   margin-top: -40rem;
   margin-left: 10rem;
+  position: absolute;
   h2{
     font-size: 4rem;
   }

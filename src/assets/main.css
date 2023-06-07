@@ -4,3 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.orangered{
+    color: orangered;
+}
+.blue{
+    color:#13203b;
+}

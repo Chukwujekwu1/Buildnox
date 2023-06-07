@@ -1,9 +1,8 @@
 <template>
-    <div class="bg ">
-    </div>
-    <div class="">
 
-        <div class=" bg-white our ml-20 px-12 rounded-lg">
+    <div class="bg">
+       <img :src='bgImage' alt='' class=" w-full " style="height:30rem">
+        <div class=" bg-white our ml-20 px-12 rounded-lg" style="position: absolute;">
             <div class='hr3 pt-12 '>
                 <hr>
                 <h3>{{ h3 }}</h3>
@@ -14,7 +13,13 @@
                 <img :src="word.img" alt="" class="w-6 h-6">
                 <h1 class='ml-4 text-xl font-medium'>{{ word.text }}</h1>
             </div>
-            
+            <div class="flex mt-12 -ml-2">
+                <img :src="contractor"  alt="">
+                <div class="ml-12 flex-col">
+                    <h1 class="text-md font-bold orangered">{{call}}</h1>
+                    <h1 class='font-bold text-3xl blue hov'>{{ number }}</h1>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -23,11 +28,15 @@
 <script >
 import bgImage from './icons/bg-1.jpg'
 import check from './icons/check-circle.png'
+import contractor from './icons/contractor-2.jpg'
 export default {
     data() {
         return {
             bgImage,
             check,
+            contractor,
+            call:'CALL FOR CONTRACTOR NOW',
+            number: '+1800-(676)-5432',
             h3: 'OUR KEY POINTS',
             our: 'Why Choose Us',
             bring:'Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation . Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward.',
@@ -58,8 +67,8 @@ export default {
 
 <style lang="scss" scoped>
 .bg {
-    background-image: url('./icons/bg-1.jpg');
-    height: 30rem;
+   background-color:rgb(233, 233, 233); 
+    height: 100rem;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -91,5 +100,10 @@ export default {
 
         ;
 
+    }
+    .hov{
+        &:hover{
+            color:orangered;
+        }
     }
 }</style>
