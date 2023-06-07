@@ -66,7 +66,7 @@ div{
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 4rem;
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(233, 233, 233);
     
     .hr3{
     display:flex;

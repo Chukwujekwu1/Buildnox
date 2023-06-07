@@ -38,6 +38,7 @@ div {
  padding-left: 4rem;
  padding-right: 4rem;
  
+ 
  ul{
   list-style: none;
   margin-top: 18px;  
