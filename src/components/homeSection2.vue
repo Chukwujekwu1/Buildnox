@@ -3,7 +3,7 @@
 
     <img :src="walk" alt="" class="walk" >
 
-    <div class="htext">
+    <div class="htext flex-col">
 
       <div class="hr3">
         <hr>
@@ -108,6 +108,8 @@ div {
       h3 {
         color: orangered;
         margin-left: 1rem;
+        font-size: 1rem;
+    font-weight: 550;
 
       }
     }
