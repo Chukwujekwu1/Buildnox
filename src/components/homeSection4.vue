@@ -7,10 +7,10 @@
             <div class=" bg-white our ml-24 px-12 ">
                 <div class='hr3 pt-12 '>
                     <hr>
-                    <h3>{{ h3 }}</h3>
+                    <h3>{{ header1 }}</h3>
                 </div>
-                <h1 class="text-5xl  font-bold mt-12 blue">{{ our }}</h1>
-                <p class="text-xl font-normal mt-12 mb-12">{{ bring }} </p>
+                <h1 class="text-5xl  font-bold mt-12 blue">{{ header2 }}</h1>
+                <p class="text-xl font-normal mt-12 mb-12">{{ text1 }} </p>
                 <div v-for="word in words" class="flex -ml-2 mt-5">
                     <img :src="word.img" alt="" class="w-6 h-6">
                     <h1 class='ml-4 text-xl font-medium'>{{ word.text }}</h1>
@@ -36,10 +36,10 @@
                 <div class='flex-col  ml-10  mt-4 mr-10'>
                     <div class='hr3'>
                         <hr>
-                        <h3>{{ 'BIGGER, BETTER, FASTER' }}</h3>
+                        <h3>{{ Header1 }}</h3>
                     </div>
-                    <h1 class="text-5xl  font-bold mt-4 text-white">{{ leading }}</h1>
-                    <p class='text-xl font-normal mt-6  text-white' >{{ bRing }}</p>
+                    <h1 class="text-5xl  font-bold mt-4 text-white">{{  Header2 }}</h1>
+                    <p class='text-xl font-normal mt-6  text-white' >{{ Text1 }}</p>
                 </div>
             </div>
 
@@ -63,11 +63,12 @@ export default {
             play,
             call: 'CALL FOR CONTRACTOR NOW',
             number: '+1800-(676)-5432',
-            h3: 'OUR KEY POINTS',
-            our: 'Why Choose Us',
-            bRing:'Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved.',
-            leading: 'Leading Way In Civil Construction',
-            bring: 'Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation . Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward.',
+            header1: 'OUR KEY POINTS',
+            header2: 'Why Choose Us',
+            Header1:'BIGGER, BETTER, FASTER',
+            Text1:'Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved.',
+            Header2: 'Leading Way In Civil Construction',
+            text1: 'Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation . Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward.',
             words:
                 [
                     {
@@ -96,7 +97,7 @@ export default {
 <style lang="css" scoped>
 .bg {
     background-color: rgb(233, 233, 233);
-    height: 100rem;
+    height: 57rem;
     background-size: cover;
     background-repeat: no-repeat;
 }

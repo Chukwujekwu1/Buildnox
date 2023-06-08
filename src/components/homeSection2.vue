@@ -11,7 +11,7 @@
       </div>
 
       <h1 class="con">
-        {{ con }} <span class="bus">{{ bus }}</span>
+        {{ con }}<span class="bus">{{ bus }}</span>
       </h1>
 
       <p class="we">

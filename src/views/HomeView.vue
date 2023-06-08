@@ -1,9 +1,10 @@
-<script>
+<script >
 
 import navbar from '../components/navbar.vue';
 import homeSection2 from '../components/homeSection2.vue';
 import homeSection3 from '../components/homeSection3.vue';
-import homeSection4 from '../components/homeSection4.vue'
+import homeSection4 from '../components/homeSection4.vue';
+import homeSection5 from '../components/homeSection5.vue'
 import house from '../assets/image-2.png';
 import man from '../assets/image-1.png';
 
@@ -13,6 +14,7 @@ export default{
     homeSection2,
     homeSection3,
     homeSection4,
+    homeSection5,
   },
   data(){
     return{
@@ -53,6 +55,7 @@ normal distribution
   <homeSection2/>
   <homeSection3/>
   <homeSection4/>
+  <homeSection5/>
   </main>
 </template>
 
