@@ -1,6 +1,6 @@
 <template>
     <div class="bg">
-        <img :src='bgImage' alt='' class=" w-full " style="height:30rem">
+        <img :src='bgImage' alt='' class=" w-full " style="height:30rem" >
 
 
         <div class="flex-row ">
