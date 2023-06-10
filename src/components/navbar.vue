@@ -1,7 +1,7 @@
 <template>
     <div >
 
-        <img :src="logo" alt="" class="xl:w-48    sm:w-40">
+        <img :src="logo" alt="" class="xl:w-44    sm:w-40">
 
         <ul class=" ">
             <li class="">
@@ -36,7 +36,7 @@ div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2rem;
+    
     text-align: center;
 
 }
@@ -47,7 +47,7 @@ div {
  
 
 
-@media (max-width:1000px) {
+@media (max-width:1024px) {
     ul li a{
         display: none;
     }
@@ -75,7 +75,8 @@ div {
     display: none;
 }
 div{
-    padding:5rem
+    padding: 4.2rem;
+    padding-top:2rem;
 }
 }
 </style>

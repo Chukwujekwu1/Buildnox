@@ -6,8 +6,8 @@
         </div>
         <h1 class="our">{{ our }}</h1>
         <p class="iF">{{ iF }}</p>
-        <ul class="flex-row">
-            <li v-for="image in images" :key="image.id" class="flex-col">
+        <ul class="img_div">
+            <li v-for="image in images" :key="image.id" class="images">
                 <img :src="image.src" alt="" style="width:6rem">
                 <h1 class="text text-3xl font-bold">{{ image.text }}</h1>
                 <h1 class="text1 text-3xl font-bold">{{ image.text1 }}</h1>
@@ -65,8 +65,16 @@ export default {
 .div {
     padding: 5rem;
     padding-top: 4rem;
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(218, 218, 218);
     
+}
+.images{
+    display: flex;
+    flex-direction: column;
+}
+.img_div{
+    display: flex;
+    flex-direction: row;
 }
 
 .hr3 {
@@ -142,11 +150,26 @@ li:hover {
 .workpics {
     width: 18rem;
     margin-top: 2rem;
-    background-color: transparent;
+   
 }
 
-.workpics:hover {
-    background-color: red;
-    transition: 0.9s;
+@media (max-width:1024px) {
+    .images{
+        margin-top: 7rem;
+    }
+    .img_div{
+        display: flex;
+        flex-direction: column;
+        margin-top:-1.5rem ;
+        
+    }
+    .div{
+        padding: 1.5rem;
+    }
+    .iF{
+        width: 100%;
+    }
 }
+
+
 </style>

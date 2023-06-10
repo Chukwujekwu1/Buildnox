@@ -1,4 +1,5 @@
 <template>
+  <div class="not">
   <div class="bg  flex-row flex p-24 pt-28">
     <div class="flex flex-col">
       <div class="hr3">
@@ -97,19 +98,7 @@
       </swiper-slide>
       ...
     </swiper>
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </div>
   </div>
 </template>
 
@@ -187,4 +176,14 @@ h3 {
   font-size: 2.6rem;
   font-weight: 750;
   margin-top: 1.5rem;
-}</style>
+}
+
+
+@media (max-width:1050px) {
+  .not{
+    display: none;
+  }
+}
+
+
+</style>

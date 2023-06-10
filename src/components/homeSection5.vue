@@ -1,6 +1,6 @@
 <template>
     <div class="div">
-        <div class="blue flex-row flex justify-between p-20 ">
+        <div class="blue  btn_div">
             <div class="flex-col">
                 <div class="flex-row flex">
                     <hr>
@@ -9,13 +9,12 @@
                 <h1 class="text-5xl  font-bold  text-white mt-8">{{ header2 }}</h1>
             </div>
             <button @click.prevent=""
-                class=" w-72 h-20 bg-red-500 text-center anim  mt-8 animate__animated animate__fadeInUpBig"> {{ btntext
-                }}</button>
+                class="  bg-red-500 text-center anim"> {{ btntext }}</button>
         </div>
-        <div class="flex-row flex justify-between p-6 -mt-72 pt-0">
-            <img :src="roofImg" alt="" class="rounded-md">
-            <img :src="buildImg" alt="" class="rounded-md">
-            <img :src="generalContructionImg" alt="" class="rounded-md">
+        <div class=" img_div">
+            <img :src="roofImg" alt="" class="rounded-md img">
+            <img :src="buildImg" alt="" class="rounded-md img">
+            <img :src="generalContructionImg" alt="" class="rounded-md img">
         </div>
         <swiper :slides-per-view="1" :space-between="50" @swiper="onSwiper" @slideChange="onSlideChange"  :autoplay='{
             delay: 3500,
@@ -61,6 +60,20 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.img_div{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem;
+    padding-top: 0rem;
+    margin-top: -18rem/* -288px */;
+}
+.btn_div{
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    
+}
 .div {
     margin-top: -0.7rem;
 }
@@ -105,6 +118,9 @@ hr {
     font-weight: 550;
     transition: 0.9s;
     border-radius: 8px;
+    height: 5rem;
+    width: 18rem;
+    margin-top:2rem ;
 
 }
 
@@ -117,5 +133,35 @@ hr {
     padding: 2.5rem;
     padding-top: 0rem;
     margin-top: -2rem;
+}
+
+
+@media (max-width:1024px) {
+    .btn_div{
+        display: flex;
+        flex-direction:column;
+        padding: 1.5rem;
+    }
+    .img_div{
+        display: flex;
+        flex-direction: column;
+        margin-top: -9rem;
+    }
+    .img{
+        margin-top: 1.5rem;
+    }
+    .pad{
+        display: none;
+    }
+    .anim{
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 1100) {
+    .btn_div{
+        display: flex;
+        justify-content: space-between;
+    }
 }
 </style>

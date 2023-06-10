@@ -1,9 +1,9 @@
 <template>
-  <div class="p-20 pt-0 div flex-row flex justify-between">
+  <div class="div">
 
     <img :src="walk" alt="" class="walk">
 
-    <div class=" flex-col  p-20 pr-0">
+    <div class=" flex-col divv">
 
       <div class="hr3">
         <hr>
@@ -11,7 +11,7 @@
       </div>
 
       <h1 class="con">
-        {{ con }}<span class="bus ml-4"> {{ bus }} </span>
+        {{ con }}<span class="bus"> {{ bus }} </span>
       </h1>
 
       <p class="we">
@@ -37,7 +37,7 @@
 
         </div>
 
-        <div class="ml-32">
+        <div class="signature">
           <img :src="signature" alt="">
         </div>
 
@@ -80,6 +80,11 @@ export default {
 
   background-color: #13203b;
   
+  padding: 5rem;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   font-family: Roboto, sans-serif;
   color: white;
 
@@ -89,18 +94,26 @@ export default {
   height: 80%;
 }
 
-
+.signature{
+  margin-left:8rem ;
+}
 
 .hr3 {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  
+  padding-top: 0;
+}
+
+.divv{
+  margin-left: 4rem;
 }
 
 hr {
   width: 2.5rem;
   height: 2px;
   margin-top: 10px;
-  background-color: orangered;
+  background-color: rgb(255, 85, 24);
   border: none;
 }
 
@@ -123,6 +136,7 @@ h3 {
 .bus {
   font-weight: 20;
   font-size: 2rem;
+  margin-left: 10px;
 
 }
 
@@ -166,4 +180,41 @@ h3 {
 
 p {
   margin-top: 10px;
-}</style>
+}
+
+
+@media (max-width:1024px) {
+  .div{
+    display: flex;
+    flex-direction: column; 
+    padding: 1.5rem;
+    padding-top: 0;
+  }
+  .hr3{
+    color:black;
+    padding: 0;
+  }
+  .con{
+    font-size: 1.9rem;
+    font-weight: 600;
+  }
+  .we{
+    font-size: 1.2rem;
+
+  }
+  .for{
+    font-size: 1.2rem;
+  }
+  .fS{
+    display: flex;
+    flex-direction:column;
+  }
+  .signature{
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  .divv{
+    margin-left: 0;
+  }
+}
+</style>

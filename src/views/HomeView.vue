@@ -3,7 +3,7 @@
 import navbar from '../components/navbar.vue';
 import homeSection2 from '../components/homeSection2.vue';
 import homeSection3 from '../components/homeSection3.vue';
-import homeSection4 from '../components/homeSection4.vue';
+
 import homeSection5 from '../components/homeSection5.vue';
 import homeSection6 from '../components/homeSection6.vue';
 import homeSection7 from '../components/homeSection7.vue';
@@ -16,7 +16,7 @@ export default {
     navbar,
     homeSection2,
     homeSection3,
-    homeSection4,
+  
     homeSection5,
     homeSection6,
     homeSection7,
@@ -63,7 +63,6 @@ export default {
     </header>
     <homeSection2 />
     <homeSection3 />
-    <homeSection4 />
     <homeSection5 />
     <homeSection6 />
     <homeSection7 />
@@ -123,11 +122,11 @@ h1{
   width: 100%;
 }
 header{
-  height:90vh
+  height:100vh
 }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   .house {
   margin-left: 54.5rem;
   margin-top: 13rem;

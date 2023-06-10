@@ -1,11 +1,11 @@
 <template>
     <div>
-        <div class="flex justify-between p-16">
+        <div class="flex justify-between p-16 brand">
             <img v-for="brand in brands" :src="brand.img" alt="" class="hover:h-9 h-8">
         </div>
 
-        <div class="bg flex justify-end pr-20">
-            <div class=" w-96 div  flex flex-col p-16 static ">
+        <div class="bg">
+            <div class="div">
                 <h1 class="font-bold text-2xl">{{ header1 }}</h1>
                 <hr class="">
                 <p class="mt-12 text-lg font-bold">{{ text }}</p>
@@ -53,10 +53,30 @@ hr {
 .div {
     background-color: #01609d;
     height: 25rem;
+    padding: 4rem;
+    width:24rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 .bg{
     background-image: url('./icons/map.png');
     width: 100%;
     height: 25rem;
+    justify-content: flex-end;
+    padding-right: 5rem;
+    display: flex;
+}
+
+@media (max-width:1024px) {
+    .brand{
+        display: none;
+    }
+    .bg{
+      display: flex;
+      
+      padding: 1.5rem;
+      padding-top: 0;
+    }
 }
 </style>
