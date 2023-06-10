@@ -6,7 +6,8 @@ import homeSection3 from '../components/homeSection3.vue';
 import homeSection4 from '../components/homeSection4.vue';
 import homeSection5 from '../components/homeSection5.vue';
 import homeSection6 from '../components/homeSection6.vue';
-import homeSection7 from '../components/homeSection7.vue'
+import homeSection7 from '../components/homeSection7.vue';
+import homeSection8 from '../components/homeSection8.vue';
 import house from '../assets/image-2.png';
 import man from '../assets/image-1.png';
 
@@ -19,6 +20,7 @@ export default{
     homeSection5,
     homeSection6,
     homeSection7,
+    homeSection8,
   },
   data(){
     return{
@@ -62,6 +64,7 @@ normal distribution
   <homeSection5/>
   <homeSection6/>
   <homeSection7/>
+  <homeSection8/>
   </main>
 </template>
 
