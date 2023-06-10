@@ -17,7 +17,9 @@
             <img :src="buildImg" alt="" class="rounded-md">
             <img :src="generalContructionImg" alt="" class="rounded-md">
         </div>
-        <swiper :slides-per-view="1" :space-between="50" @swiper="onSwiper" @slideChange="onSlideChange" class="pad">
+        <swiper :slides-per-view="1" :space-between="50" @swiper="onSwiper" @slideChange="onSlideChange"  :autoplay='{
+            delay: 3500,
+            disableOnInteraction: false,}' class="pad mySwiper">
             <swiper-slide class="text1">{{ text1 }}</swiper-slide>
             <swiper-slide class="text1">{{ text1 }}</swiper-slide>
             ...
@@ -26,11 +28,14 @@
 </template>
 
 <script >
+import SwiperCore, {Autoplay} from 'swiper/core';
+SwiperCore.use(Autoplay);
 import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import roofImg from '../components/icons/gallery-1.jpg';
 import buildImg from '../components/icons/gallery-2.jpg';
 import generalContructionImg from '../components/icons/gallery-3.jpg';
+ 
 export default {
     components: {
         Swiper,
@@ -45,6 +50,11 @@ export default {
             header1: 'OUR WORKS',
             header2: 'Explore Recent Projects',
             btntext: 'VIEW ALL PROJECTS',
+        }
+    },
+    methods:{
+        SwiperSlide(){
+            speed:3000
         }
     }
 }
@@ -108,5 +118,4 @@ hr {
     padding-top: 0rem;
     margin-top: -2rem;
 }
-
 </style>
