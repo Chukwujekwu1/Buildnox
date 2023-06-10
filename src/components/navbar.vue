@@ -1,11 +1,11 @@
 <template>
-    <div>
+    <div >
 
-        <img :src="logo" alt="">
+        <img :src="logo" alt="" class="xl:w-48    sm:w-40">
 
-        <ul>
-            <li>
-                <a href="/">Home </a>
+        <ul class=" ">
+            <li class="">
+                <a href="/" >Home </a>
                 <a href="/about">About</a>
                 <a href="/project">Project</a>
                 <a href="/service">Services</a>
@@ -13,54 +13,69 @@
                 <a href="/contact">Contact</a>
             </li>
         </ul>
-
+        <img :src="icon" alt="" class="icon">
     </div>
 </template>
 
 <script>
 import logo from './icons/logo-light (1).png';
+import icon from './icons/more.png';
 
-export default{
-    data(){
-        return{
+export default {
+    data() {
+        return {
             logo,
+            icon,
         }
     }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
 div {
- display: flex;
- justify-content: space-between;
- padding-top: 2rem;
- text-align: center;
- padding-left: 4rem;
- padding-right: 4rem;
- 
- 
- ul{
-  list-style: none;
-  margin-top: 18px;  
- }
-li{
-  text-decoration: none,  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    text-align: center;
+
 }
-a{
-    text-decoration:none;
+
+
+
+
+ 
+
+
+@media (max-width:1000px) {
+    ul li a{
+        display: none;
+    }
+    .icon{
+        width: 2rem;
+        height: 2rem;
+    }
+    div{
+        padding:1rem ;
+    }
+}
+@media (min-width: 1200px) {
+    ul li a {
+    text-decoration: none;
     margin-left: 1.3rem;
     font-size: 1.3rem;
-    font-weight:2.5rem;
+    font-weight: 2.5rem;
     color: white;
     font-family: Roboto;
-    &:hover{
-        color:orangered;
     }
-    
-}   
-  
-
+    ul li a:hover {
+    color: orangered;
 }
-
-;
+.icon{
+    display: none;
+}
+div{
+    padding:5rem
+}
+}
 </style>

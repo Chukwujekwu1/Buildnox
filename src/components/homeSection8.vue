@@ -1,7 +1,17 @@
 <template>
     <div>
-        <div>
-            {{ brand1 }}
+        <div class="flex justify-between p-16">
+            <img v-for="brand in brands" :src="brand.img" alt="" class="hover:h-9 h-8">
+        </div>
+
+        <div class="bg flex justify-end pr-20">
+            <div class=" w-96 div  flex flex-col p-16 static ">
+                <h1 class="font-bold text-2xl">{{ header1 }}</h1>
+                <hr class="">
+                <p class="mt-12 text-lg font-bold">{{ text }}</p>
+                <p class=" font-bold  text-lg">{{ text1 }}</p>
+                <p class="mt-10 text-lg font-bold">{{ phone }}</p>
+            </div>
         </div>
     </div>
 </template>
@@ -13,14 +23,40 @@ import brand3 from './icons/brand-logo-3.png';
 import brand4 from './icons/brand-logo-4.png';
 import brand5 from './icons/brand-logo-5.png';
 
+
 export default {
     data() {
         return {
-            brands: [ brand1 ,  brand2 , brand3 , brand4 ,  brand5 ],
-            brand1
+            header1: 'Office Address',
+            text: 'PO Box 5849 Collins Street West',
+            text1: 'Victoria 9005 Australia',
+            phone: 'Phone: +1800-456-7890',
+            brands: [{ img: brand1 }, { img: brand2 }, { img: brand3 }, { img: brand4 }, { img: brand5 }]
         }
-    }
+    },
 }
 </script>
 
-<style lang="css" scoped></style>
+<style lang="css" scoped>
+* {
+    color: white;
+}
+
+hr {
+    width: 1.7rem;
+    height: 2px;
+    margin-top: 0.5rem;
+    background-color: white;
+    border: none;
+}
+
+.div {
+    background-color: #01609d;
+    height: 25rem;
+}
+.bg{
+    background-image: url('./icons/map.png');
+    width: 100%;
+    height: 25rem;
+}
+</style>
