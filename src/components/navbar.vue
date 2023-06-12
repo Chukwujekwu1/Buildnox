@@ -3,7 +3,7 @@
 
         <img :src="logo" alt="" class="xl:w-44    sm:w-40">
 
-        <ul class=" ">
+        <ul class=" ul">
             <li class="">
                 <a href="/" >Home </a>
                 <a href="/about">About</a>
@@ -15,6 +15,9 @@
         </ul>
         <img :src="icon" alt="" class="icon">
     </div>
+    <div v-if="mobile_nav_view" class="mobile_view">
+        
+    </div>
 </template>
 
 <script>
@@ -24,6 +27,7 @@ import icon from './icons/more.png';
 export default {
     data() {
         return {
+            mobile_nav_view:false,
             logo,
             icon,
         }
@@ -42,7 +46,12 @@ div {
 }
 
 
-
+.mobile_view{
+   width: 15rem;
+   height: 100vh;
+   background-color:black;
+   position: relative;
+}
 
  
 
@@ -57,9 +66,12 @@ div {
     }
     div{
         padding:1rem ;
+    }.ul{
+        position:absolute;
     }
 }
 @media (min-width: 1200px) {
+    
     ul li a {
     text-decoration: none;
     margin-left: 1.3rem;

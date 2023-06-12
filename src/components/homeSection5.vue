@@ -9,7 +9,7 @@
                 <h1 class="text-5xl  font-bold  text-white mt-8">{{ header2 }}</h1>
             </div>
             <button @click.prevent=""
-                class="  bg-red-500 text-center anim"> {{ btntext }}</button>
+                class="  bg-red-500  anim"> {{ btntext }}</button>
         </div>
         <div class=" img_div">
             <img :src="roofImg" alt="" class="rounded-md img">
@@ -121,6 +121,7 @@ hr {
     height: 5rem;
     width: 18rem;
     margin-top:2rem ;
+    text-align: center;
 
 }
 
@@ -158,7 +159,7 @@ hr {
     }
 }
 
-@media (min-width: 1100) {
+@media (min-width: 1100px) {
     .btn_div{
         display: flex;
         justify-content: space-between;

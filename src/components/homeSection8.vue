@@ -55,17 +55,18 @@ hr {
     height: 25rem;
     padding: 4rem;
     width:24rem;
-    display: flex;
+    
     flex-direction: column;
-    margin: auto;
+    
 }
 .bg{
     background-image: url('./icons/map.png');
     width: 100%;
     height: 25rem;
-    justify-content: flex-end;
-    padding-right: 5rem;
     display: flex;
+    justify-content: end;
+    padding-right: 5rem;
+   
 }
 
 @media (max-width:1024px) {
@@ -74,9 +75,10 @@ hr {
     }
     .bg{
       display: flex;
-      
       padding: 1.5rem;
       padding-top: 0;
     }
 }
+
+
 </style>

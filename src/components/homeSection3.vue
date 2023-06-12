@@ -18,7 +18,7 @@
     </div>
 </template>
 
-<script >
+<script>
 import roof from './icons/roof.png';
 import sketch from './icons/sketch.png';
 import service from './icons/service-1.jpg';
@@ -63,8 +63,8 @@ export default {
 
 <style lang="css" scoped>
 .div {
-    padding: 5rem;
-    padding-top: 4rem;
+    padding: 6rem;
+    padding-top: 5rem;
     background-color: rgb(218, 218, 218);
     
 }
