@@ -10,3 +10,6 @@
 .blue{
     color:#13203b;
 }
+body{
+    overflow-x: hidden;
+}

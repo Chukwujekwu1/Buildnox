@@ -1,7 +1,7 @@
 <template>
     <div >
 
-        <img :src="logo" alt="" class="xl:w-44    sm:w-40">
+        <img :src="logo" alt="" class="xl:w-48     sm:w-40">
 
         <ul class=" ul">
             <li class="">
