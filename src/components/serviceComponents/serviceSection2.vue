@@ -14,7 +14,7 @@
                 <img :src="image.workPics" alt="" class="workpics">
             </li>
         </ul>
-        <p style="height: 10rem;"></p>
+        <p style="height: 6rem;"></p>
     </div>
 </template>
 
@@ -25,7 +25,16 @@ import service from '../icons/service-1.jpg';
 import construction from '../icons/construction.png';
 import plan from '../icons/image-26.jpg';
 import roofing from '../icons/image-28.jpg'
-
+import renovation from '../icons/renovation.png'
+import renovationImg from '../icons/image-27 (1).jpg'
+import interior from '../icons/interior-design.png'
+import interiorImg from '../icons/image-29.jpg'
+import building from '../icons/building.png'
+import buildingImg from '../icons/image-30.jpg'
+import consulting from '../icons/engineer (1).png'
+import consultingImg from '../icons/image-31.jpg'
+import maintenance from '../icons/maintenance.png'
+import maintenanceImg from '../icons/image-32.jpg'
 export default {
     data() {
         return {
@@ -55,6 +64,41 @@ export default {
                     id: 3000,
                     workPics: service
                 },
+                {
+                    text: 'Building',
+                    text1: 'Renovation',
+                    src: renovation,
+                    id: 4000,
+                    workPics: renovationImg
+                },
+                {
+                    text: 'Interior',
+                    text1: 'Design',
+                    src: interior,
+                    id: 5000,
+                    workPics:interiorImg
+                },
+                {
+                    text: 'Repair',
+                    text1: 'And Expand',
+                    src: building,
+                    id: 6000,
+                    workPics: buildingImg
+                },
+                {
+                    text: 'Construction',
+                    text1: 'Consulting',
+                    src: consulting,
+                    id: 7000,
+                    workPics: consultingImg
+                },
+                {
+                    text: 'Building',
+                    text1: 'Maintenance',
+                    src: maintenance,
+                    id: 8000,
+                    workPics: maintenanceImg
+                },
             ]
         }
     }
@@ -66,15 +110,15 @@ export default {
     padding: 6rem;
     padding-top: 5rem;
     background-color: rgb(218, 218, 218);
-    
 }
 .images{
     display: flex;
     flex-direction: column;
 }
 .img_div{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 3rem;
 }
 
 .hr3 {
@@ -127,7 +171,7 @@ li {
 
     padding: 43px 35px 0;
     height: fit-content;
-    width: 20rem;
+    width: 17rem;
     background: #fff;
     list-style: none;
     color: #13203b;
@@ -155,14 +199,12 @@ li:hover {
 }
 
 @media (max-width:1024px) {
-    .images{
-        margin-top: 7rem;
-    }
+   
     .img_div{
         display: flex;
+        justify-content: center;
         flex-direction: column;
-        margin-top:-1.5rem ;
-        
+        margin-top:2rem ;
     }
     .div{
         padding: 1.5rem;

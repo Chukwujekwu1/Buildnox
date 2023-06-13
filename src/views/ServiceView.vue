@@ -5,9 +5,8 @@
       <h1 class="pageName">{{ pageName }}</h1>
       <img :src="house" alt="">
     </header>
-    <p class="h-24"></p>
-    
     <serviceSection2 />
+    <serviceSection3/>
     </main>
 </template>
 
@@ -26,10 +25,12 @@
 import navbar from '../components/navbar.vue';
 import house from '../assets/building3.png';
 import serviceSection2 from '../components/serviceComponents/serviceSection2.vue'
+import serviceSection3 from '../components/serviceComponents/serviceSection3.vue';
 export default {
   components: {
     navbar,
     serviceSection2, 
+    serviceSection3,
   },
   data() {
     return {
