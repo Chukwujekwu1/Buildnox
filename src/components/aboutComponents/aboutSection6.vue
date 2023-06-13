@@ -108,11 +108,14 @@ hr {
         display: flex;
         flex-direction:column;
         padding: 1.5rem;
+        padding-top: 3rem;
+        margin-bottom: 3rem;
     }
     .img_div{
         display: flex;
         flex-direction: column;
-        margin-top: -9rem;
+        padding: 1.5rem;
+      
     }
     .img{
         margin-top: 1.5rem;

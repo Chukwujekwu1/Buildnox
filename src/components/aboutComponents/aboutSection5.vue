@@ -64,7 +64,7 @@ export default {
     return {
       img: [certificate, model, tenant, tenant,],
       num: ['2,786', '788', '270', '57',],
-      text1: ['Total Projects', 'Qualified Workers', 'Get Awards'],
+      text1: ['Total Projects', 'Workers', 'Get Awards'],
       header1: 'STATISTICS',
       header2: 'Know More About Our Success',
       text: 'Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going for ward, a new normal.'
@@ -150,8 +150,21 @@ h3 {
 }
 
 @media (max-width:1050px) {
-  .not {
+  /* .not {
     display: none;
+  } */
+  .bg{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    padding-top: 3rem;
+  }
+  .central{
+    display: grid;
+    justify-content: center;
+    margin-top: 3rem;
+    grid-template-columns: auto  ;
+    column-gap: 20px;
   }
 }</style>
   

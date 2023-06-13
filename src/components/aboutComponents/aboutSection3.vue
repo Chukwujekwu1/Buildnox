@@ -26,7 +26,7 @@
                 </div>
                 <img :src="work_img" alt="" class="work_img">
             </div>
-            
+            <p class="space"></p>
         </div>
     
    
@@ -160,7 +160,7 @@ hr {
 }
 .main{
     background-color:#F1F4FB;
-    height: 57rem;
+    height: fit-content;
    
     
 }
@@ -180,7 +180,18 @@ hr {
 @media (max-width:1024px) {
     .div{
         display:flex;
-        flex-direction: reverse-column;
+        flex-direction:column;
+        padding: 1.5rem;
+    }
+    .space{
+        height:5rem;
+    }
+    .our{
+        width: 100%;
+    }
+    .work_img{
+       margin-top: 25rem;
+       height: 30rem;
     }
 }
 </style>
