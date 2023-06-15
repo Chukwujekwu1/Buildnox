@@ -14,6 +14,11 @@
             <img :src="team2" alt="" class="rounded-md img">
             <img :src="team3" alt="" class="rounded-md img">
             <img :src="team4" alt="" class="rounded-md img">
+            <img :src="team5" alt="" class="rounded-md img">
+            <img :src="team6" alt="" class="rounded-md img">
+            <img :src="team7" alt="" class="rounded-md img">
+            <img :src="team8" alt="" class="rounded-md img">
+            
         </div>
     </div>
 </template>
@@ -23,6 +28,10 @@ import team1 from '../icons/team-1.jpg';
 import team2 from '../icons/team-2.jpg';
 import team3 from '../icons/team-3.jpg';
 import team4 from '../icons/team-4.jpg';
+import team5 from '../icons/team-11.jpg';
+import team6 from '../icons/team-12.jpg';
+import team7 from '../icons/team-13.jpg';
+import team8 from '../icons/team-14.jpg';
  
 export default {
     
@@ -32,6 +41,10 @@ export default {
             team2,
             team3,
             team4,
+            team5,
+            team6,
+            team7,
+            team8,
             text1: 'TECHNOLOGY CIVIL',
             header1: 'OUR PROFESSIONALS',
             header2: 'Our Dedicated Team',
@@ -52,12 +65,15 @@ h1{
 }
 
 .img_div{
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
+    
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 2rem;
+    column-gap: 2rem;
     padding: 5rem;
     padding-top: 0rem;
-    margin-top: -18rem/* -288px */;
+    padding-bottom: 9rem;
+    
 }
 .btn_div{
     padding: 5rem;
@@ -66,8 +82,8 @@ h1{
     
 }
 .div {
-    margin-top: -0.7rem;
-  background-color: rgb(253, 253, 253);
+    
+  background-color: rgb(214, 214, 214);
   
 }
 
@@ -79,7 +95,7 @@ h1{
 }
 
 .blue {
-    height: 33rem;
+    height: fit-content;
     
 }
 

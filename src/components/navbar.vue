@@ -9,7 +9,7 @@
                 <a href="/about">About</a>
                 <a href="/project">Project</a>
                 <a href="/service">Services</a>
-                <a href="/page">Pages</a>
+                <a href="/team">Team</a>
                 <a href="/contact">Contact</a>
             </li>
         </ul>

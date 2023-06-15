@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import AboutView from '../views/AboutView.vue' ;
 import ContactView from '../views/ContactView.vue';
-import PageView from '../views/PageView.vue';
+import TeamView from '../views/TeamView.vue';
 import ServiceView from '../views/ServiceView.vue';
 import ProjectView from '../views/ProjectView.vue';
 
@@ -22,9 +22,9 @@ const router = createRouter({
     },
     
     {
-      path: '/page',
-      name: 'page',
-      component: PageView
+      path: '/team',
+      name: 'team',
+      component: TeamView
     },
     
     {
