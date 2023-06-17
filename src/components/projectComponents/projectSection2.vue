@@ -53,7 +53,7 @@ export default {
             
             header1: 'OUR WORKS',
             header2: 'Explore Recent Projects',
-            text: ['We shows only the best websites and portfolios built','completely with passion, simplicity & creativity.']
+            text: ['We shows only the best websites and portfolios built','completely with passion, simplicity & creativity.'],
             
         }
     },

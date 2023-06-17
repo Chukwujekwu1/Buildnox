@@ -11,8 +11,8 @@
         </div>
         <div class="sub_div">
             <div class="img_div">
-                <input type="text" placeholder="Your Name">
-                <input type="text" placeholder="Your Email">
+                <input type="name" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
                 <input type="text" placeholder="Subject">
                 <input type="text" placeholder="Message" style=" height: 7rem;">
                 <button class='btn'> submit</button>

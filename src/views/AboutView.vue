@@ -11,7 +11,7 @@
     <aboutSection4 />
     <aboutSection5/>
     <aboutSection6/>
-
+     <footer_div/>
 
 
   </main>
@@ -30,9 +30,11 @@ import aboutSection3 from '../components/aboutComponents/aboutSection3.vue';
 import aboutSection4 from '../components/aboutComponents/aboutSection4.vue';
 import aboutSection5 from '../components/aboutComponents/aboutSection5.vue';
 import aboutSection6 from '../components/aboutComponents/aboutSection6.vue';
+import footer_div from '../components/footer.vue';
 export default {
   components: {
     navbar,
+    footer_div,
     aboutSection2,
     aboutSection3,
     aboutSection4,

@@ -8,7 +8,7 @@
     <!-- <p class="h-2"></p> -->
     <teamSection2/>
     <teamSection3/>
-
+    <footer_div/>
     </main>
 </template>
 
@@ -25,6 +25,7 @@
 
 <script >
 import navbar from '../components/navbar.vue';
+import footer_div from '../components/footer.vue';
 import house from '../assets/building3.png';
 import teamSection2 from '../components/teamComponents/teamSection2.vue'
 import teamSection3 from '../components/teamComponents/teamSection3.vue'
@@ -33,6 +34,7 @@ export default {
     navbar,
     teamSection2,
     teamSection3,
+    footer_div,
   },
   data() {
     return {

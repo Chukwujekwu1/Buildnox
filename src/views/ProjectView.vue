@@ -7,7 +7,7 @@
     </header>
     <p class="h-24"></p>
     <projectSection2/>
-
+    <footer_div/>
     </main>
 </template>
 
@@ -24,12 +24,14 @@
 
 <script >
 import navbar from '../components/navbar.vue';
+import footer_div from '../components/footer.vue';
 import house from '../assets/building3.png';
 import projectSection2 from '../components/projectComponents/projectSection2.vue'
 export default {
   components: {
     navbar,
     projectSection2,
+    footer_div,
   },
   data() {
     return {

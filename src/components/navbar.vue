@@ -13,10 +13,7 @@
                 <a href="/contact">Contact</a>
             </li>
         </ul>
-        <img :src="icon" alt="" class="icon">
-    </div>
-    <div v-if="mobile_nav_view" class="mobile_view">
-        
+        <img :src="icon" alt="" class="icon" @click="mobile_nav_view">
     </div>
 </template>
 
@@ -27,15 +24,29 @@ import icon from './icons/more.png';
 export default {
     data() {
         return {
-            mobile_nav_view:false,
+           
             logo,
             icon,
+        }
+    },
+    methods:{
+        mobile_nav_view(){
+            this.$emit('my-event', true)
         }
     }
 }
 </script>
 
 <style lang="css" scoped>
+
+.mobile_view{
+   width: 15rem;
+   height: 10vh;
+   background-color:black;
+   position:sticky ;
+}
+
+
 div {
     display: flex;
     justify-content: space-between;
@@ -44,17 +55,6 @@ div {
     text-align: center;
 
 }
-
-
-.mobile_view{
-   width: 15rem;
-   height: 100vh;
-   background-color:black;
-   position: relative;
-}
-
- 
-
 
 @media (max-width:1024px) {
     ul li a{

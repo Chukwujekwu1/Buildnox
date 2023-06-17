@@ -1,5 +1,5 @@
 <template>
-    <div class="div blue">
+    <div class="div">
         <div class="blue  btn_div">
             <div class="flex-col">
                 <div class="flex-row flex">

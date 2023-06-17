@@ -7,6 +7,7 @@
     </header>
     <serviceSection2 />
     <serviceSection3/>
+    <footer_div/>
     </main>
 </template>
 
@@ -24,6 +25,7 @@
 <script >
 import navbar from '../components/navbar.vue';
 import house from '../assets/building3.png';
+import footer_div from '../components/footer.vue';
 import serviceSection2 from '../components/serviceComponents/serviceSection2.vue'
 import serviceSection3 from '../components/serviceComponents/serviceSection3.vue';
 export default {
@@ -31,6 +33,7 @@ export default {
     navbar,
     serviceSection2, 
     serviceSection3,
+    footer_div,
   },
   data() {
     return {
